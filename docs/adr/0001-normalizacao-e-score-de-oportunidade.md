@@ -1,0 +1,3 @@
+# Normalização de SKU e score de oportunidade entre marketplaces
+
+O Nukenin Trader comparará somente ofertas do mesmo SKU canônico — jogo, coleção, número do colecionador, idioma, condição e acabamento — e calculará a referência pela mediana dos preços líquidos das ofertas equivalentes. O score combina desvio contra essa mediana, quantidade de ofertas e liquidez; a partir de 75 uma oportunidade de compra é confirmada e entre 45 e 74 permanece em observação. Essa escolha evita falsos positivos causados por variantes diferentes, anúncios extremos e taxas de marketplace ao incorporar novas fontes.

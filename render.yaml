@@ -1,0 +1,18 @@
+services:
+  - type: web
+    name: nukenin-trader
+    runtime: node
+    plan: free
+    buildCommand: npm install
+    startCommand: npm start
+    healthCheckPath: /api/tickermint/status
+    autoDeployTrigger: commit
+    envVars:
+      - key: CARDTRADER_API_TOKEN
+        sync: false
+      - key: MYP_API_TOKEN
+        sync: false
+      - key: SUPABASE_URL
+        sync: false
+      - key: SUPABASE_SERVICE_ROLE_KEY
+        sync: false

@@ -1,0 +1,5 @@
+.env.local
+.env
+graphify-out/
+node_modules/
+*.log
